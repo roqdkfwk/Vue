@@ -19,8 +19,8 @@
     
     ```jsx
     router.beforeEach((to, from) => {
-    	...
-    	return false
+      ...
+      return false
     })
     ```
     
@@ -31,8 +31,8 @@
             
             ```jsx
             router.beforeEach((to, from) => {
-            	...
-            	return false
+              ...
+              return false
             })
             ```
             
@@ -42,8 +42,8 @@
             
             ```jsx
             router.beforeEach((to, from) => {
-            	...
-            	return { name: 'About' }
+              ...
+              return { name: 'About' }
             })
             ```
             
@@ -58,15 +58,15 @@
         import UserView from '../views/UserView.vue'
         
         const router = createRouter({
-        	routes: [
-        		{
-        			path: '/user/:id',
-        			name: 'user',
-        			component: UserView,
-        		},
-        		{ ... },
-        		...
-        	]
+          routes: [
+            {
+              path: '/user/:id',
+              name: 'user',
+              component: UserView,
+            },
+            { ... },
+            ...
+          ]
         })
         ```
         
@@ -86,9 +86,9 @@
         <!-- LoginView.vue -->
         
         <template>
-        	<div>
-        		<h1>Login View</h1>
-        	</div>
+          <div>
+            <h1>Login View</h1>
+          </div>
         </template>
         ```
         
@@ -96,9 +96,9 @@
         index.js
         
         {
-        	path: '/login',
-        	name: 'login',
-        	component: LoginView
+          path: '/login',
+          name: 'login',
+          component: LoginView
         }
         ```
         
@@ -114,12 +114,12 @@
         index.js
         
         router.beforeEach((to, from) => {
-        	const isAuthenticated = false
+          const isAuthenticated = false
         		
-        	if(!isAuthenticated && to.name !== 'login') {
-        		console.log('로그인이 필요합니다.')
-        		return { name: 'login' }
-        	}
+          if(!isAuthenticated && to.name !== 'login') {
+            console.log('로그인이 필요합니다.')
+            return { name: 'login' }
+          }
         })
         ```
         
@@ -132,13 +132,13 @@
     
     ```jsx
     {
-    	path: '/user/:id',
-    	name: 'user',
-    	component: UserView,
-    	beforeEnter: (to, from) => {
-    		...,
-    		return false
-    	}
+      path: '/user/:id',
+      name: 'user',
+      component: UserView,
+      beforeEnter: (to, from) => {
+        ...,
+        return false
+      }
     })
     ```
     
@@ -152,13 +152,13 @@
         index.js
         
         {
-        	path: '/user/:id',
-        	name: 'user',
-        	component: UserView,
-        	beforeEnter: (to, from) => {
-        		console.log(to)
-        		console.log(from)
-        	}
+          path: '/user/:id',
+          name: 'user',
+          component: UserView,
+          beforeEnter: (to, from) => {
+            console.log(to)
+            console.log(from)
+          }
         }
         ```
         
@@ -181,20 +181,20 @@
         const isAuthenticated = true
         
         const router = createRouter({
-        	routes: [
-        		{
-        			path: '/login',
-        			name: 'login',
-        			component: LoginView,
-        			beforeEnter: (to, from) => {
-        				if (isAuthenticated === true) {
-        						console.log('이미 로그인 상태입니다.')
-        						return {name: 'home'}
-        				}
-        			}
-        		},
-        		{...},
-        		...
-        	]
+          routes: [
+            {
+              path: '/login',
+              name: 'login',
+              component: LoginView,
+              beforeEnter: (to, from) => {
+                if (isAuthenticated === true) {
+                  console.log('이미 로그인 상태입니다.')
+                  return {name: 'home'}
+                }
+              }
+            },
+            {...},
+            ...
+          ]
         })
         ```
