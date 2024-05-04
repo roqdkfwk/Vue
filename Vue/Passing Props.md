@@ -71,9 +71,9 @@
         <!-- Parent.vue -->
         
         <template>
-        	<div>
-        		<ParentChild my-msg="message" />
-        	</div>
+          <div>
+            <ParentChild my-msg="message" />
+          </div>
         </template>
         
         my-msg : prop 이름
@@ -91,7 +91,7 @@
 <!-- ParentChild.vue -->
 
 <script setup>
-	defineProps(['myMsg'])
+  defineProps(['myMsg'])
 <script>
 ```
 
@@ -103,9 +103,9 @@
         <!-- ParentChild.vue -->
         
         <script setup>
-        	defineProps({
-        		myMsg: String
-        	})
+          defineProps({
+        	myMsg: String
+          })
         </script>
         ```
         
@@ -116,7 +116,7 @@
         <!-- ParentChild.vue -->
         
         <div>
-        	<p>{{ myMsg }}</p>
+          <p>{{ myMsg }}</p>
         </div>
         ```
         
@@ -124,9 +124,9 @@
         
         ```jsx
         <script setup>
-        	const props = defineProps({ myMsg: String })
-        	console.log(props)    // {myMsg: 'message'}
-        	console.log(props.myMsg)    // 'message'
+          const props = defineProps({ myMsg: String })
+          console.log(props)    // {myMsg: 'message'}
+          console.log(props.myMsg)    // 'message'
         </script>
         ```
         
@@ -137,7 +137,7 @@
     <!-- ParentGrandChild.vue -->
     
     <template>
-    	<div>ParentGrandChild입니다.</div>
+      <div>ParentGrandChild입니다.</div>
     <template>
     
     <script setup>
@@ -148,17 +148,17 @@
     <!-- ParentChild.vue -->
     
     <template>
-    	<div>
-    		<p>{{ myMsg }}</p>
-    		<ParentGrandChild />
-    	</div>
+      <div>
+    	<p>{{ myMsg }}</p>
+    	<ParentGrandChild />
+      </div>
     </template>
     
     <script setup>
     import ParentGrandChild from '@/components/ParentGrandChild.vue'
     
     defineProps({
-    	myMsg: String
+      myMsg: String
     })
     </script
     ```
@@ -169,10 +169,10 @@
     <!-- ParentChild.vue -->
     
     <template>
-    	<div>
-    		<p>{{ myMsg }}</p>
-    		<ParentGrandChild :my-msg="myMsg"/>
-    	</div>
+      <div>
+    	<p>{{ myMsg }}</p>
+    	<ParentGrandChild :my-msg="myMsg"/>
+      </div>
     </template>
     ```
     
@@ -180,14 +180,14 @@
     <!-- ParentGrandChild.vue -->
     
     <template>
-    	<div>
-    		<p>{{ myMsg }}</p>
-    	</div>
+      <div>
+    	<p>{{ myMsg }}</p>
+      </div>
     </template>
     
     <script setup>
     defineProps({
-    	myMsg: String
+      myMsg: String
     })
     </script>
     ```
@@ -203,7 +203,7 @@
         
         ```jsx
         defineProps({
-        	myMsg: String
+          myMsg: String
         })
         ```
         
@@ -238,8 +238,8 @@
         <!-- ParentChild.vue -->
         
         defineProps({
-        	myMsg: String,
-        	dynamicProps: String
+          myMsg: String,
+          dynamicProps: String
         })
         ```
         
