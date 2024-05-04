@@ -18,14 +18,14 @@
         <!-- App.vue -->
         
         <template>
-        	<header>
-        		<nav>
-        			<RouterLink to="/">Home</RouterLink>
-        			<RouterLink to="/about">About</RouterLink>
-        		<nav>
-        	</header>
+          <header>
+        	<nav>
+         	  <RouterLink to="/">Home</RouterLink>
+        	  <RouterLink to="/about">About</RouterLink>
+        	<nav>
+          </header>
         	
-        	<RouterView />
+          <RouterView />
         </template>
         ```
         
@@ -44,15 +44,15 @@
         router/index.js
         
         const router = createRouter({
-        	routes: [
-        		{
-        			path: '/',
-        			name: 'home',
-        			component: HomeView    // router에 URL과 컴포넌트를 매핑
-        		},
-        		{ ... }, 
-        		...
-        	]
+          routes: [
+        	{
+         	  path: '/',
+        	  name: 'home',
+        	  component: HomeView    // router에 URL과 컴포넌트를 매핑
+        	},
+        	{ ... }, 
+        	...
+          ]
         })
         ```
         
@@ -74,15 +74,15 @@
         index.js
         
         const router = createRouter({
-        	routes: [
-        		{
-        			path: '/',
-        			name: 'home',
-        			component: HomeView
-        		},
-        		{ ... },
-        		...
-        	]
+          routes: [
+            {
+        	  path: '/',
+        	  name: 'home',
+        	  component: HomeView
+        	},
+        	{ ... },
+        	...
+          ]
         })
         ```
         
@@ -115,9 +115,9 @@
         <!-- UserView.vue -->
         
         <template>
-        	<div>
-        		<h1>UserView</h1>
-        	</div>
+          <div>
+        	<h1>UserView</h1>
+        </div>
         </template>
         ```
         
@@ -130,15 +130,15 @@
         import UserView from '../views/UserView.vue'
         
         const router = createRouter({
-        	routes: [
-        		{
-        			path: '/user/:id',
-        			name: 'user',
-        			component: UserView
-        		},
-        		{ ... },
-        		...
-        	]
+          routes: [
+        	{
+          	  path: '/user/:id',
+        	  name: 'user',
+        	  component: UserView
+        	},
+        	{ ... },
+        	...
+          ]
         })
         ```
         
@@ -149,10 +149,10 @@
         <!-- UserView.vue -->
         
         <template>
-        	<div>
-        			<h1>UserView</h1>
-        			<h2>{{ $route.params.id }}번 User 페이지</h2>
-        	</div>
+          <div>
+        	<h1>UserView</h1>
+        	<h2>{{ $route.params.id }}번 User 페이지</h2>
+          </div>
         </template>
         ```
         
@@ -169,10 +169,10 @@
         const userId = ref(route.params.id)
         
         <template>
-        	<div>
-        		<h1>UserView</h1>
-        		<h2>{{ userId }}번 User 페이지</h2>
-        	</div>
+          <div>
+        	<h1>UserView</h1>
+        	<h2>{{ userId }}번 User 페이지</h2>
+          </div>
         </template>
         ```
         
@@ -198,7 +198,7 @@
         const router = useRouter()
         
         const goHome = function() {
-        	router.push({ name: 'home' })
+          router.push({ name: 'home' })
         }
         
         <button v-on:click="goHome">홈으로</button>
