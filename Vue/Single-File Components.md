@@ -49,7 +49,7 @@
         
         <style scoped>
           .greeting {
-        	color: red:
+            color: red:
           }
         </style>
         ```
