@@ -37,8 +37,8 @@
     
     ```jsx
     <template v-if="name === 'Cathy'">
-    		<div>Cathy</div>
-    		<div>30살</div>
+    	<div>Cathy</div>
+    	<div>30살</div>
     </template>
     ```
     

@@ -5,7 +5,7 @@
     - `router` 폴더 생성
     - `views` 폴더 생성
     
-    ![Untitled](./images/Vue%20Router/Untitled%201.png)
+    ![Untitled](./images/Vue%20Router/Untitled.png  )
     
 - `RouterLink`
     - 페이지를 다시 로드하지 않고 URL을 변경하고 URL 생성 및 관련 로직을 처리한다.
@@ -18,14 +18,14 @@
         <!-- App.vue -->
         
         <template>
-        		<header>
-        				<nav>
-        						<RouterLink to="/">Home</RouterLink>
-        						<RouterLink to="/about">About</RouterLink>
-        				<nav>
-        		</header>
-        		
-        		<RouterView />
+        	<header>
+        		<nav>
+        			<RouterLink to="/">Home</RouterLink>
+        			<RouterLink to="/about">About</RouterLink>
+        		<nav>
+        	</header>
+        	
+        	<RouterView />
         </template>
         ```
         
@@ -44,15 +44,15 @@
         router/index.js
         
         const router = createRouter({
-        		routes: [
-        				{
-        						path: '/',
-        						name: 'home',
-        						component: HomeView    // router에 URL과 컴포넌트를 매핑
-        				},
-        				{ ... }, 
-        				...
-        		]
+        	routes: [
+        		{
+        			path: '/',
+        			name: 'home',
+        			component: HomeView    // router에 URL과 컴포넌트를 매핑
+        		},
+        		{ ... }, 
+        		...
+        	]
         })
         ```
         
@@ -74,15 +74,15 @@
         index.js
         
         const router = createRouter({
-        		routes: [
-        				{
-        						path: '/',
-        						name: 'home',
-        						component: HomeView
-        				},
-        				{ ... },
-        				...
-        		]
+        	routes: [
+        		{
+        			path: '/',
+        			name: 'home',
+        			component: HomeView
+        		},
+        		{ ... },
+        		...
+        	]
         })
         ```
         
@@ -115,9 +115,9 @@
         <!-- UserView.vue -->
         
         <template>
-        		<div>
-        				<h1>UserView</h1>
-        		</div>
+        	<div>
+        		<h1>UserView</h1>
+        	</div>
         </template>
         ```
         
@@ -130,15 +130,15 @@
         import UserView from '../views/UserView.vue'
         
         const router = createRouter({
-        		routes: [
-        				{
-        						path: '/user/:id',
-        						name: 'user',
-        						component: UserView
-        				},
-        				{ ... },
-        				...
-        		]
+        	routes: [
+        		{
+        			path: '/user/:id',
+        			name: 'user',
+        			component: UserView
+        		},
+        		{ ... },
+        		...
+        	]
         })
         ```
         
@@ -149,10 +149,10 @@
         <!-- UserView.vue -->
         
         <template>
-        		<div>
-        				<h1>UserView</h1>
-        				<h2>{{ $route.params.id }}번 User 페이지</h2>
-        		</div>
+        	<div>
+        			<h1>UserView</h1>
+        			<h2>{{ $route.params.id }}번 User 페이지</h2>
+        	</div>
         </template>
         ```
         
@@ -169,10 +169,10 @@
         const userId = ref(route.params.id)
         
         <template>
-        		<div>
-        				<h1>UserView</h1>
-        				<h2>{{ userId }}번 User 페이지</h2>
-        		</div>
+        	<div>
+        		<h1>UserView</h1>
+        		<h2>{{ userId }}번 User 페이지</h2>
+        	</div>
         </template>
         ```
         
@@ -185,7 +185,7 @@
     - 새 항목을 history stack에 `push`하므로 사용자가 브라우저 뒤로 가기 버튼을 클릭하면 이전 URL로 이동이 가능하다.
     - `RouterLink`를 클릭했을 때 내부적으로 호출되는 메소드이므로 `RouterLink`를 클릭하는 것은 `router.push()`를 호출하는 것과 같다.
     
-    ![Untitled](./images/Vue%20Router/Untitled%202.png)
+    ![Untitled](./images/Vue%20Router/Untitled%201.png)
     
 - `router.push()` 활용
     - UserView 컴포넌트에서 HomeView 컴포넌트로 이동하는 버튼 만들기
@@ -198,7 +198,7 @@
         const router = useRouter()
         
         const goHome = function() {
-        		router.push({ name: 'home' })
+        	router.push({ name: 'home' })
         }
         
         <button v-on:click="goHome">홈으로</button>
@@ -217,4 +217,4 @@
     - 현재의 위치를 바꾸는 메소드이다.
     - `push`메소드와 달리 history stack에 새로운 항목을 push하지 않고 다른 URL로 이동한다. → 이동 전 URL로 뒤로 가기가 불가능
     
-    ![Untitled](./images/Vue%20Router/Untitled.png)
+    ![Untitled](./images/Vue%20Router/Untitled%202.png)

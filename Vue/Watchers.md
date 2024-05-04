@@ -5,7 +5,7 @@
         
         ```jsx
         watch(variable, (newValue, oldValue) => {
-        		do something
+        	do something
         }
         ```
         
@@ -26,7 +26,7 @@
         const count = ref(0)
         
         const countWatch = watch(count, (newValue, oldValue) => {
-        		console.log(`newValue: ${newValue}, oldValue: ${oldValue}`)
+        	console.log(`newValue: ${newValue}, oldValue: ${oldValue}`)
         })
         
         출력값
@@ -47,7 +47,7 @@
         const messageLength = ref(0)
         
         const messageWatch = watch(message, (newValue, oldValue) => {
-        		messageLength.value = newValue.length
+        	messageLength.value = newValue.length
         })
         
         출력값

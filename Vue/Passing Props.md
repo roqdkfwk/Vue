@@ -14,8 +14,8 @@
 - 사전 준비
     - Vue 프로젝트 생성
     - 초기 생성된 컴포넌트 모두 삭제
-    - src/assets 내부 파일 모두 삭제
-    - main.js 해당 코드 삭제
+    - `src/assets` 내부 파일 모두 삭제
+    - `main.js` 해당 코드 삭제
 - `App` → `Parent` → `ParentChild` 컴포넌트 관계 작성
     - `App` 컴포넌트 작성
         
@@ -215,7 +215,7 @@
         
 - Static props & Dynamic props
     - 지금까지 작성한 것은 Static(정적) props이다.
-    - v-bind를 사용하여 **동적으로 할당된 props**를 사용할 수 있다.
+    - `v-bind`를 사용하여 **동적으로 할당된 props**를 사용할 수 있다.
     1. Dynamic props 정의
         
         ```jsx

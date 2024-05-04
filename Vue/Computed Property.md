@@ -6,9 +6,9 @@
         
         ```jsx
         const todos = ref([
-        		{ text: 'Vue 실습' },
-        		{ text: '자격증 공부' },
-        		{ text: 'TIL 작성' }
+        	{ text: 'Vue 실습' },
+        	{ text: '자격증 공부' },
+        	{ text: 'TIL 작성' }
         ])
         ```
         
@@ -17,7 +17,7 @@
         <p>{{ todos.length > 0 ? '아직 남았다' : '퇴근' }}</p>
         ```
         
-    - 템플릿이 복잡해지며 todos에 따라 계산을 수행하게 된다.
+    - 템플릿이 복잡해지며 `todos`에 따라 계산을 수행하게 된다.
     - 만약 이 계산을 템플릿에 여러 번 사용하는 경우에는 반복이 발생한다.
 - `computed()` 기본 예시(2 / 2)
     - `computed()` 적용
@@ -27,7 +27,7 @@
         const { createApp, ref, computed } = Vue
         
         const restOfTodos = computed(() => {
-        		return todos.value.length > 0 ? '아직 남았다' : '퇴근'
+        	return todos.value.length > 0 ? '아직 남았다' : '퇴근'
         })
         ```
         
@@ -55,7 +55,7 @@
     
     ```jsx
     const getRestOfTodos = function() {
-    		return todos.value.length > 0 ? '아직 남았다' : '퇴근'
+    	return todos.value.length > 0 ? '아직 남았다' : '퇴근'
     }
     ```
     
