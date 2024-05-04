@@ -18,7 +18,7 @@
         <!-- MyComponent.vue -->
         
         <template>
-        	<div class="greeting"> << msg >> </div>
+          <div class="greeting"> << msg >> </div>
         </template>
         
         <script setup>
@@ -27,9 +27,9 @@
         </script>
         
         <style scoped>
-        	.greeting {
-        		color: red;
-        }
+          .greeting {
+            color: red;
+          }
         </style>
         ```
         
@@ -39,7 +39,7 @@
         
         ```jsx
         <template>
-        	<div class="greeting"> << msg >> </div>
+          <div class="greeting"> << msg >> </div>
         </template>
         
         <script setup>
@@ -48,9 +48,9 @@
         </script>
         
         <style scoped>
-        	.greeting {
-        		color: red:
-        	}
+          .greeting {
+        	color: red:
+          }
         </style>
         ```
         
