@@ -24,7 +24,7 @@
         
         <template>
         	<div>
-        		<Parent />
+            <Parent />
         	</div>
         </template>
         
@@ -40,7 +40,7 @@
         
         <template>
         	<div>
-        		<ParentChild />
+            <ParentChild />
         	</div>
         </template>
         
