@@ -19,7 +19,7 @@
 - `App` → `Parent` → `ParentChild` 컴포넌트 관계 작성
     - `App` 컴포넌트 작성
         
-        ```java
+        ```java 
         <!-- App.vue -->
         
         <template>
