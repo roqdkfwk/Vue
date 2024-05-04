@@ -251,4 +251,4 @@
         
     3. Dynamic props 출력 확인
         
-        ![Untitled](Passing%20Props%200a4e67e9e83c4271bf330ae36788bdbc/Untitled.png)
+        ![Untitled](./images/Passing%20Props/Untitled.png)

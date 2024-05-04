@@ -5,7 +5,7 @@
     - `router` 폴더 생성
     - `views` 폴더 생성
     
-    ![Untitled](Vue%20Router%20143594338223467796516e4ee33eaac5/Untitled.png)
+    ![Untitled](./images/Vue%20Router/Untitled%201.png)
     
 - `RouterLink`
     - 페이지를 다시 로드하지 않고 URL을 변경하고 URL 생성 및 관련 로직을 처리한다.
@@ -185,7 +185,7 @@
     - 새 항목을 history stack에 `push`하므로 사용자가 브라우저 뒤로 가기 버튼을 클릭하면 이전 URL로 이동이 가능하다.
     - `RouterLink`를 클릭했을 때 내부적으로 호출되는 메소드이므로 `RouterLink`를 클릭하는 것은 `router.push()`를 호출하는 것과 같다.
     
-    ![Untitled](Vue%20Router%20143594338223467796516e4ee33eaac5/Untitled%201.png)
+    ![Untitled](./images/Vue%20Router/Untitled%202.png)
     
 - `router.push()` 활용
     - UserView 컴포넌트에서 HomeView 컴포넌트로 이동하는 버튼 만들기
@@ -217,4 +217,4 @@
     - 현재의 위치를 바꾸는 메소드이다.
     - `push`메소드와 달리 history stack에 새로운 항목을 push하지 않고 다른 URL로 이동한다. → 이동 전 URL로 뒤로 가기가 불가능
     
-    ![Untitled](Vue%20Router%20143594338223467796516e4ee33eaac5/Untitled%202.png)
+    ![Untitled](./images/Vue%20Router/Untitled.png)
