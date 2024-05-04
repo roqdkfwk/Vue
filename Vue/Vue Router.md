@@ -76,12 +76,12 @@
         const router = createRouter({
           routes: [
             {
-        	  path: '/',
-        	  name: 'home',
-        	  component: HomeView
-        	},
-        	{ ... },
-        	...
+              path: '/',
+              name: 'home',
+              component: HomeView
+            },
+            { ... },
+            ...
           ]
         })
         ```
@@ -116,8 +116,8 @@
         
         <template>
           <div>
-        	<h1>UserView</h1>
-        </div>
+            <h1>UserView</h1>
+          </div>
         </template>
         ```
         
@@ -131,13 +131,13 @@
         
         const router = createRouter({
           routes: [
-        	{
-          	  path: '/user/:id',
-        	  name: 'user',
-        	  component: UserView
-        	},
-        	{ ... },
-        	...
+            {
+              path: '/user/:id',
+              name: 'user',
+              component: UserView
+            },
+            { ... },
+            ...
           ]
         })
         ```
@@ -150,8 +150,8 @@
         
         <template>
           <div>
-        	<h1>UserView</h1>
-        	<h2>{{ $route.params.id }}번 User 페이지</h2>
+            <h1>UserView</h1>
+            <h2>{{ $route.params.id }}번 User 페이지</h2>
           </div>
         </template>
         ```
@@ -170,8 +170,8 @@
         
         <template>
           <div>
-        	<h1>UserView</h1>
-        	<h2>{{ userId }}번 User 페이지</h2>
+            <h1>UserView</h1>
+            <h2>{{ userId }}번 User 페이지</h2>
           </div>
         </template>
         ```
