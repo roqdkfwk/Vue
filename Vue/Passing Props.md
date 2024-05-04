@@ -104,7 +104,7 @@
         
         <script setup>
           defineProps({
-        	myMsg: String
+            myMsg: String
           })
         </script>
         ```
@@ -149,8 +149,8 @@
     
     <template>
       <div>
-    	<p>{{ myMsg }}</p>
-    	<ParentGrandChild />
+        <p>{{ myMsg }}</p>
+        <ParentGrandChild />
       </div>
     </template>
     
@@ -170,8 +170,8 @@
     
     <template>
       <div>
-    	<p>{{ myMsg }}</p>
-    	<ParentGrandChild :my-msg="myMsg"/>
+        <p>{{ myMsg }}</p>
+        <ParentGrandChild :my-msg="myMsg"/>
       </div>
     </template>
     ```
@@ -181,7 +181,7 @@
     
     <template>
       <div>
-    	<p>{{ myMsg }}</p>
+        <p>{{ myMsg }}</p>
       </div>
     </template>
     
