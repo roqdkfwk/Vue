@@ -23,9 +23,9 @@
         <!-- App.vue -->
         
         <template>
-        	<div>
+          <div>
             <Parent />
-        	</div>
+          </div>
         </template>
         
         <script setup>
@@ -39,9 +39,9 @@
         <!-- Parent.vue -->
         
         <template>
-        	<div>
+          <div>
             <ParentChild />
-        	</div>
+          </div>
         </template>
         
         <script setup>
@@ -55,7 +55,7 @@
         <!-- ParentChild.vue -->
         
         <template>
-        	<div>ParentChild입니다.</div>
+          <div>ParentChild입니다.</div>
         </template>
         
         <script setup>
