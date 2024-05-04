@@ -19,10 +19,10 @@
         
         <template>
           <header>
-        	<nav>
-         	  <RouterLink to="/">Home</RouterLink>
-        	  <RouterLink to="/about">About</RouterLink>
-        	<nav>
+            <nav>
+              <RouterLink to="/">Home</RouterLink>
+              <RouterLink to="/about">About</RouterLink>
+            <nav>
           </header>
         	
           <RouterView />
@@ -45,13 +45,13 @@
         
         const router = createRouter({
           routes: [
-        	{
-         	  path: '/',
-        	  name: 'home',
-        	  component: HomeView    // router에 URL과 컴포넌트를 매핑
-        	},
-        	{ ... }, 
-        	...
+            {
+              path: '/',
+              name: 'home',
+              component: HomeView    // router에 URL과 컴포넌트를 매핑
+            },
+            { ... }, 
+            ...
           ]
         })
         ```
