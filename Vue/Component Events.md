@@ -33,7 +33,7 @@
         <ParentChild v-on:some-event="someCallback" my-msg="message" v-bind:dynamic-props="name" />
         
         const someCallback = function() {
-        	console.log("ParentChild가 발신한 이벤트를 수신했습니다.')
+          console.log("ParentChild가 발신한 이벤트를 수신했습니다.')
         }
         ```
         
@@ -47,7 +47,7 @@
         const emit = defineEmits(['someEvent', 'myFocus'])
         
         const buttonClick = function() {
-        	emit('someEvent')
+          emit('someEvent')
         }
         </script>
         ```
@@ -62,7 +62,7 @@
         const emit = defineEmits(['someEvent', 'myFocus'])
         
         const buttonClick = function() {
-        	emit('someEvent')
+          emit('someEvent')
         }
         </script>
         
@@ -80,7 +80,7 @@
         const emit = defineEmits(['someEvent', 'emitArgs'])
         
         const emitArgs = function () {
-        	emit('emitArgs', 1, 2, 3)
+          emit('emitArgs', 1, 2, 3)
         }
         
         <button v-on:click="emitArgs">추가 인자 전달</button>
@@ -92,15 +92,15 @@
         <!-- Parent.vue -->
         
         <ParentChild
-        	v-on:some-event="someCallback"
-        	v-on:emit-args="getNumbers"
-        	my-msg="message"
-        	v-bind:dynamic-props="name"
+          v-on:some-event="someCallback"
+          v-on:emit-args="getNumbers"
+          my-msg="message"
+          v-bind:dynamic-props="name"
         />
         
         const getNumbers = function(...args) {
-        	console.log(args)
-        	console.log('ParentChild가 전달한 추가인자 ${args}를 수신했습니다.')
+          console.log(args)
+          console.log('ParentChild가 전달한 추가인자 ${args}를 수신했습니다.')
         }
         ```
         
@@ -133,7 +133,7 @@
         const emit = defineEmits(['updateName'])
         
         const updateName = function() {
-        	emit('updateName')
+          emit('updateName')
         }
         
         <!-- '이름 변경' 버튼을 클릭하면 updateName을 ParentChild로 발신한다. -->
@@ -148,7 +148,7 @@
         const emit = defineEmits(['updateName'])
         
         const updateName = function() {
-        	emit('updateName')
+          emit('updateName')
         }
         
         <!-- ParentGrandChild에서 발신된 update-name을 수신하면 updateName를 실행한다. -->
@@ -165,7 +165,7 @@
         
         <!-- updateName이 실행되면 name이 'updatedName'으로 바뀐다. -->
         const updateName = function() {
-        	name.value = 'updatedName'
+          name.value = 'updatedName'
         }
         ```
         
