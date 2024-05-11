@@ -7,7 +7,7 @@
     - UI를 독립적이고 재사용 가능한 일부분으로 분할하고 각 부분을 개별적으로 다룰 수 있다.
     - 그러면 앱은 자연스럽게 중첩된 Component의 트리로 구성된다.
         
-        ![Untitled](/images/Single-File%20Components/Untitled.png)
+        ![Untitled](./images/Single-File%20Components/Untitled.png)
         
 - Single-File Components (SFC)
     - 컴포넌트의 템플릿, 로직 및 스타일을 하나의 파일로 묶어낸 특수한 파일 형식(*.vue 파일)

@@ -263,7 +263,7 @@
         
     3. Dynamic props 출력 확인
         
-        ![Untitled](/images/Passing%20Props/Untitled.png)
+        ![Untitled](./images/Passing%20Props/Untitled.png)
         
 - Passring Props 연습
     

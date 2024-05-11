@@ -15,7 +15,7 @@
         <button @click="isSeen = !isSeen">토글</button>
         ```
         
-        ![Untitled](/images/Conditional%20Rendering/Untitled.png)        
+        ![Untitled](./images/Conditional%20Rendering/Untitled.png)
         
     - `‘v-else-if’` directive를 사용하여 `v-if`에 대한 else if 블록을 나타낼 수 있다.
         

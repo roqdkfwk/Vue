@@ -61,7 +61,7 @@
         연동되어 접근성을 향상시키는 데 사용된다.
         ```
         
-        ![Untitled](/images/Form%20Input%20Bindings/Untitled.png)
+        ![Untitled](./images/Form%20Input%20Bindings/Untitled.png)
         
     - 여러 체크박스와 배열 활용
         - 해당 배열에는 현재 선택된 체크박스의 값이 포함된다.
@@ -80,7 +80,7 @@
             <label for="bella">Bella</label>
             ```
             
-            ![Untitled](/images/Form%20Input%20Bindings/Untitled%201.png)
+            ![Untitled](./images/Form%20Input%20Bindings/Untitled%201.png)
             
 
 - Select 활용
@@ -101,4 +101,4 @@
         </select>
         ```
         
-        ![Untitled](/images/Form%20Input%20Bindings/Untitled%202.png)
+        ![Untitled](./images/Form%20Input%20Bindings/Untitled%202.png)
