@@ -23,8 +23,8 @@
         
         ```jsx
         const my Arr = ref([
-          { name: 'Alice', age: 20},
-          { name: "Bella', age: 21}
+        	{ name: 'Alice', age: 20},
+        	{ name: "Bella', age: 21}
         ])
         ```
         
@@ -36,14 +36,14 @@
         
         ```jsx
         const myObj = ref({
-          name: 'Cathy',
-          age: 30
+        	name: 'Cathy',
+        	age: 30
         })
         ```
         
         ```jsx
         <div v-for="(value, key, index) in myObj">
-          {{ index }} / {{ key }} / {{ value }}
+        	{{ index }} / {{ key }} / {{ value }}
         </div>
         ```
         
@@ -52,11 +52,11 @@
         
         ```jsx
         <ul>
-          <template v-for="item in myArr">
-            <li>{{ item.name }}</li>
-            <li>{{ item.age }}</li>
-            <hr>
-          </template>
+        	<template v-for="item in myArr">
+        		<li>{{ item.name }}</li>
+        		<li>{{ item.age }}</li>
+        		<hr>
+        	</template>
         </ul>
         ```
         
@@ -70,14 +70,14 @@
     let id = 0
     
     const items = ref([
-      { id: id++, name: 'Alice' },
-      { id: id++, name: 'Bella' }
+    	{ id: id++, name: 'Alice' },
+    	{ id: id++, name: 'Bella' }
     ])
     ```
     
     ```jsx
     <div v-for="item in items" : key="item.id">
-      <!-- content -->
+    	<!-- content -->
     </div>
     ```
     
@@ -92,18 +92,18 @@
         let id = 0
         
         const todos = ref([
-          { id: id++, name: '복습', isComplete: true },
-          { id: id++, name: '예습', isComplete: false },
-          { id: id++, name: '식사', isComplete: true },
-          { id: id++, name: '노래', isComplete: false },
+        	{ id: id++, name: '복습', isComplete: true },
+        	{ id: id++, name: '예습', isComplete: false },
+        	{ id: id++, name: '식사', isComplete: true },
+        	{ id: id++, name: '노래', isComplete: false },
         ])
         ```
         
         ```jsx
         <ul>
-          <li v-for="todo in todos" v-if="todo.isComplete === true" :key="todo.id">
-            {{ todo.name }}
-          </li>
+        	<li v-for="todo in todos" v-if="todo.isComplete === true" :key="todo.id">
+        		{{ todo.name }}
+        	</li>
         </ul>
         ```
         
@@ -112,15 +112,15 @@
         
         ```jsx
         const completeTodos = computed(() => {
-          return todos.value.filter((todo) => todo.isComplete)
+        	return todos.value.filter((todo) => todo.isComplete)
         })
         ```
         
         ```jsx
         <ul>
-          <li v-for="todo in completeTodos" :key="todo.id">
-            {{ todo.name }}
-          </li>
+        	<li v-for="todo in completeTodos" :key="todo.id">
+        		{{ todo.name }}
+        	</li>
         </ul>
         ```
         
@@ -129,9 +129,9 @@
         
         ```jsx
         <ul>
-          <li v-for="todo in todos" v-if="!todo.isComplete" :key="todo.id">
-            {{ todo.name }}
-          </li>
+        	<li v-for="todo in todos" v-if="!todo.isComplete" :key="todo.id">
+        		{{ todo.name }}
+        	</li>
         </ul>
         ```
         
@@ -140,9 +140,9 @@
         ```jsx
         <ul>
         <template v-for="todo in todos" :key="todo.id">
-          <li v-if="!todo.isComplete">
-            {{ todo.name }}
-          </li>
+        	<li v-if="!todo.isComplete">
+        		{{ todo.name }}
+        	</li>
         </template>
         </ul>
         ```

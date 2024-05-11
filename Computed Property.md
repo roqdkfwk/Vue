@@ -6,9 +6,9 @@
         
         ```jsx
         const todos = ref([
-          { text: 'Vue 실습' },
-     	  { text: '자격증 공부' },
-          { text: 'TIL 작성' }
+        	{ text: 'Vue 실습' },
+        	{ text: '자격증 공부' },
+        	{ text: 'TIL 작성' }
         ])
         ```
         
@@ -27,7 +27,7 @@
         const { createApp, ref, computed } = Vue
         
         const restOfTodos = computed(() => {
-          return todos.value.length > 0 ? '아직 남았다' : '퇴근'
+        	return todos.value.length > 0 ? '아직 남았다' : '퇴근'
         })
         ```
         
@@ -45,7 +45,7 @@
     
     ```jsx
     const restOfTodos = computed(() => {
-      return todos.value.length > 0 ? '아직 남았다' : '퇴근'
+    		return todos.value.length > 0 ? '아직 남았다' : '퇴근'
     })
     ```
     
@@ -55,7 +55,7 @@
     
     ```jsx
     const getRestOfTodos = function() {
-      return todos.value.length > 0 ? '아직 남았다' : '퇴근'
+    	return todos.value.length > 0 ? '아직 남았다' : '퇴근'
     }
     ```
     
