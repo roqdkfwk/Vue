@@ -95,7 +95,7 @@
             
             `<p v-if="seen">Hi There</p>`
             
-            ![Untitled](/images/Template%20Syntax%208a8e704030c34e19b9018f53c78ab628/Untitled.png)
+            ![Untitled](/images/Template%20Syntax/Untitled.png)
             
 
 - Directive - Arguments

@@ -59,4 +59,4 @@
 
 - computed와 watchers
     
-    ![Untitled](/images/Watchers%20dbb99f93e148429cab441ede2a94529d/Untitled.png)
+    ![Untitled](/images/Watchers/Untitled.png)
